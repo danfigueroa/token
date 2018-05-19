@@ -28,20 +28,36 @@
         <div class="row">
 
             <div class="alert alert-success offset-md-2 col-md-8" role="alert">
-                <h4 class="alert-heading">RETIRE A SUA SENHA NORMAL AQUI!</h4>
+                <h4 class="alert-heading">RETIRE A SUA SENHA PREFERENCIAL AQUI!</h4>
                 <p class="align-middle">Toque na tela para selecionar a opção desejada.</p>
                 <hr>
                 <p class="mb-0">As senhas preferenciais são destinadas para idosos, gestantes e deficientes físicos.</p>
             </div>
 
           <div class="offset-md-2 col-md-8">
-                <a href="atendimento.html">
-                  <button type="button" class="btn btn-outline-light btn-lg btn-block botao">Atendimento</button>
-                </a>
+                
+                  <button type="button" class="btn btn-outline-light btn-lg btn-block botao" onclick="atendimentoPreferencial()">Atendimento</button>
+                
 
-                <a href="caixa.html">
-                <button type="button" class="btn btn-outline-light btn-lg btn-block botao">Caixa</button>
-              </a>
+                <script>
+                  function atendimentoPreferencial() {
+                    var atendimento = 100;
+                    alert("PAT" + atendimento);
+                    atendimento ++;
+                  }
+                  </script>
+
+                
+                <button type="button" class="btn btn-outline-light btn-lg btn-block botao" onclick="caixaPreferencial()">Caixa</button>
+             
+
+              <script>
+                function caixaPreferencial() {
+                  var caixa = 100;
+                    alert("PCX" + caixa);
+                    caixa ++;
+                }
+                </script>
                  
               </div>
 

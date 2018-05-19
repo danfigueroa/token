@@ -36,12 +36,28 @@
 
           <div class="offset-md-2 col-md-8">
                 <a href="atendimento.html">
-                  <button type="button" class="btn btn-outline-light btn-lg btn-block botao">Atendimento</button>
+                  <button type="button" class="btn btn-outline-light btn-lg btn-block botao" onclick="atendimentoNormal()">Atendimento</button>
                 </a>
 
+                <script>
+                  function atendimentoNormal() {
+                    var atendimento = 100;
+                    alert("NAT" + atendimento);
+                    atendimento ++;
+                  }
+                  </script>
+
                 <a href="caixa.html">
-                <button type="button" class="btn btn-outline-light btn-lg btn-block botao">Caixa</button>
+                <button type="button" class="btn btn-outline-light btn-lg btn-block botao" onclick="caixaNormal()">Caixa</button>
               </a>
+
+              <script>
+                function caixaNormal() {
+                  var caixa = 100;
+                    alert("NCX" + caixa);
+                    caixa ++;
+                }
+                </script>
                  
               </div>
 
