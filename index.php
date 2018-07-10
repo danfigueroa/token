@@ -46,36 +46,32 @@ require 'db.php';
 
             <div class="alert alert-success offset-md-2 col-md-8" role="alert">
                 <center>
-                <h4>RETIRE A SUA SENHA AQUI!</h4>
+                <h1>RETIRE A SUA SENHA AQUI!</h1>
                 </center>    
                 <center>
-                <p>Toque na tela para selecionar a opção desejada.</p>
+                <h3>Toque na tela para selecionar a opção desejada.</h3>
                 </center>
                 <hr>
                 
             </div>
 
           <div class="offset-md-2 col-md-8">
-                <a href="preferencial.html">
-                  <button type="button" class="btn btn-default-light btn-lg btn-block botao">Atendimento Preferencial</button>
-                    <center>
-                    <img src="img/preferencial.png" width="800" height="200" class="img-fluid" alt="Responsive image" " href="index.html">
-                    </center>
-                    
-                </a>
-                <p></p>
-                <a href="normal.html">
-                <button type="button" class="btn btn-default-light btn-lg btn-block botao">Atendimento Normal</button>
-              </a>
-
+           
+            <button onclick="mudarDePagina('normal.html')"  type="button" class="btn btn-default-light btn-lg btn-block botao">Atendimento Normal</button>
+            <button onclick="mudarDePagina('preferencial.html')" type="button" class="btn btn-default-light btn-lg btn-block botao">Atendimento Preferencial</button>
                  
-              </div>
+            </div>
 
           </div>
   
           
         </div>
-     
+     <script>
+        function mudarDePagina(url) {
+          window.location = url;
+        }
+
+       </script>
   </body>
 </html>
 

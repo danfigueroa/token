@@ -39,6 +39,12 @@ CREATE TABLE `unidade` (
   `telefone` varchar(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+
+CREATE TABLE `senha` (
+  `id` int(11) NOT NULL,
+  `senha` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
 -- Dumping data for table `unidade`
 --
@@ -57,6 +63,10 @@ INSERT INTO `unidade` (`id`, `nome`, `logradouro`, `numero`, `bairro`, `cidade`,
 ALTER TABLE `unidade`
   ADD PRIMARY KEY (`id`);
 
+
+ALTER TABLE `senha`
+  ADD PRIMARY KEY (`id`);
+
 --
 -- AUTO_INCREMENT for dumped tables
 --
@@ -65,6 +75,8 @@ ALTER TABLE `unidade`
 -- AUTO_INCREMENT for table `unidade`
 --
 ALTER TABLE `unidade`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+ALTER TABLE `senha`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
